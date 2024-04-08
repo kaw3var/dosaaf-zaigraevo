@@ -1,0 +1,14 @@
+.main-header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header__info {
+    display: flex;
+    align-items: center;
+}
+
+.main-header__card__item {
+    display: flex;
+}
+

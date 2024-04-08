@@ -1,0 +1,32 @@
+:root {
+    --content-area-width: 1070px; /* Размер контентной области */
+    --content-area-padding: var(--space-4x); /* Отступ контентной области от краёв экрана */
+    --column-count: 6; /* Число колонок */
+    --space-column-gap: var(--space-4x); /* Отступ между колонками */
+    --space-column-plus-gap: calc((var(--content-area-width) + var(--space-column-gap)) / var(--column-count));
+    --space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));
+    --space-column-2: calc((var(--space-column-plus-gap))* 2 - var(--space-column-gap));
+    --space-column-3: calc((var(--space-column-plus-gap))* 3 - var(--space-column-gap));
+    --space-column-4: calc((var(--space-column-plus-gap))* 4 - var(--space-column-gap));
+
+    /* Параметры шрифтов */
+    --font-size-global: 20px;
+    --font-weight-global: 300px;
+
+    --font-size-additional: 15px;
+    --font-weight-additional: 500;
+
+    --font-size-title: 40px;
+    --font-weight-title: 600;
+
+    --font-family-heading: "Montserrat", sans-serif;
+    --font-size-heading: 80px;
+    --font-weight-heading: 800;
+    --font-weight-main-text-about-us: 300;
+
+
+    /* Цвета */
+    --red-color: #FF2626;
+    --white-color: #FFFFFF;
+    --map-color: #4B4B4B;
+}
