@@ -1,0 +1,73 @@
+.teachers {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+}
+
+.teachers > .card {
+    position: relative;
+    border: var(--border-gray);
+    border-radius: 10px;
+    padding: 75px 16px;
+}
+
+.teachers > .card > .card__photo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: var(--border-gray);
+    border-radius: 50%;
+    top: 0;
+    transform: translate(0, -50%);
+    z-index: 1;
+    background-color: var(--light-background);
+}
+
+.teachers > .card > .card__name {
+    margin-bottom: 32px;
+    font-weight: var(--font-weight-subtitle);
+}
+
+.teachers > .card > .card__info .title {
+    font-size: var(--font-size-additional);
+    font-weight: var(--font-weight-additional);
+}
+
+.teachers > .card > .card__info .list {
+    list-style-type: none;
+    padding-inline-start: unset;
+}
+
+.teachers > .card > .card__info .list > .item {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: var(--font-size-additional);
+    font-weight: var(--font-weight-light-additional);
+}
+
+.teachers > .card > .card__info .list > .item:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    background-color: var(--color-red);
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+}
+
+.teachers__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-4x);
+}
+
+.download__btn {
+    background-color: var(--color-white);
+    border-color: var(--color-black);
+    color: var(--color-black);
+}

@@ -1,9 +1,71 @@
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: var(--font-size-base);
-    color: var(--color-text);
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
+* {
+    font-family: var(--font-family-global);
+    font-size: var(--font-size-main);
+    font-weight: var(--font-weight-main);
+}
+
+body {
+    margin: 0;
+}
+
+
+.dark-background {
+    background-color: var(--dark-background);
+    color: var(--color-white-additional);
+}
+
+.dark-background .container-title {
+    color: var(--dark-background);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-white-additional);
+}
+
+.dark-background a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.light-background .container-title {
+    color: var(--color-white);
+    background-color: var(--light-background);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-background);
+}
+
+.container-title { 
+    font-size: var(--font-size-container-title);
+    font-weight: var(--font-weight-container-title);
+    margin: var(--space-8x) 0;
+    text-transform: uppercase;
+}
+
+.container-subtitle {
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-subtitle);
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: var(--width-container);
+    margin: 0 auto;
+    padding: var(--main-padding);
+}
+
+button {
+    justify-self: end;
+    padding: var(--space-4x) var(--space-10x);
+    background-color: var(--color-red);
+    border-radius: 5;
+    border-color: transparent;
+    color: var(--color-white);
+    font-weight: var(--font-weight-additional);
+}
+
+input {
+    padding: var(--space-4x) var(--space-10x) var(--space-4x) var(--space-4x);
+    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: calc(var(--space) + 1px);
+    width: 100%;
+    font-size: var(--font-size-additional);
 }
