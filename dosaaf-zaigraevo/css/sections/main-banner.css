@@ -1,22 +1,53 @@
-.main-banner__block {
-    display: flex;
-    flex-direction: column;
+.main-title {
+    color: var(--color-white);
+    background-color: var(--light-background);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-background);
+    font-size: 85px;
+    font-weight: var(--font-weight-container-title);
+    margin: var(--space-8x) 0;
+    text-transform: uppercase;
 }
 
-.main-heading {
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-heading);
-    color: white; /* Цвет текста */
-    text-shadow: 
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-      -1px  1px 0 #000,
-       1px  1px 0 #000;
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
-.main-banner__info {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.main__logo {
+    position: absolute;
+    right: -200px;
 }
 
+.main__btn {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.main__bottom {
+    text-align: center;
+}
+
+.scroll {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .main-title {
+        font-size: var(--font-size-subtitle);
+    }
+
+    .main__text {
+        font-size: 13px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+
+    .main__logo {
+        position: relative;
+        right: 0px;
+    }
+}

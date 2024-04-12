@@ -1,14 +1,28 @@
-.main-header__nav {
+header .container {
+    padding: 0;
+}
+
+.header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: var(--space-5x) 0;
 }
 
-.main-header__info {
+.nav-info {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: var(--space-4x);
 }
 
-.main-header__card__item {
-    display: flex;
+.nav-info .contact-info__item p {
+    font-size: 15px;
+    margin: 0 5px;
 }
 
+@media screen and (max-width: 600px) {
+    header .container {
+        padding: 0 var(--space-3x);
+    }
+}

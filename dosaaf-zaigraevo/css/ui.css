@@ -1,13 +1,43 @@
 * {
     font-family: var(--font-family-global);
-    font-size: var(--font-size-main);
-    font-weight: var(--font-weight-main);
 }
 
 body {
     margin: 0;
 }
 
+/* Стиль для списка */
+
+li {
+    list-style-type: none;
+}
+
+.list {
+    list-style-type: none;
+    padding-inline-start: unset;
+}
+
+.item {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: var(--font-size-additional);
+    font-weight: var(--font-weight-light-additional);
+}
+
+.item:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    background-color: var(--color-red);
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+}
+
+/* ------------------------------------- */
 
 .dark-background {
     background-color: var(--dark-background);
@@ -49,16 +79,16 @@ body {
     max-width: var(--width-container);
     margin: 0 auto;
     padding: var(--main-padding);
+    font-size: var(--font-size-main);
 }
 
 button {
     justify-self: end;
     padding: var(--space-4x) var(--space-10x);
-    background-color: var(--color-red);
-    border-radius: 5;
-    border-color: transparent;
-    color: var(--color-white);
+    border-radius: 5px;
     font-weight: var(--font-weight-additional);
+    border: 1px solid;
+    font-size: var(--font-size-main);
 }
 
 input {
@@ -68,4 +98,22 @@ input {
     border-radius: calc(var(--space) + 1px);
     width: 100%;
     font-size: var(--font-size-additional);
+}
+
+span.bold {
+    font-weight: var(--font-weight-additional);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: var(--space-12x) var(--space-3x);
+    }
+    
+    .container-title {
+        font-size: 30px;        
+    }
+
+    .container-subtitle {
+        font-size: 20px;
+    }
 }

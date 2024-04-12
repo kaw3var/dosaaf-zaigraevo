@@ -6,8 +6,7 @@
 
 .about-us-info {
     display: grid;
-    grid-template-areas: "card card line"
-                         "card card line";
+    grid-template-columns: 49% 2% 49%;
     grid-column-gap: var(--space-16x);
     grid-row-gap: var(--space-8x);
 }
@@ -35,4 +34,26 @@
     display: flex;
     justify-content: center;
     margin-top: var(--space-8x);
+}
+
+@media screen and (max-width: 600px) {
+    .block-title {
+
+    }
+
+    .about-us-info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    hr {
+        width: 100%;
+    }
+    
+    .documents__btn {
+        width: 100%;
+        color: var(--color-white);
+        background-color: var(--color-red);
+        border-color: transparent;
+    }
 }

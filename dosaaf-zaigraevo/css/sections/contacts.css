@@ -32,3 +32,28 @@
     border-radius: calc(var(--space-2x) + 2px);
     background-color: var(--dark-background);
 }
+
+.contact-form__btn {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        margin-bottom: 32px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'title''form''map';
+    }
+
+    .contact-form__btn {
+        width: 100%;
+    }
+
+    .contact-form__map {
+        height: 270px;
+    }
+}
