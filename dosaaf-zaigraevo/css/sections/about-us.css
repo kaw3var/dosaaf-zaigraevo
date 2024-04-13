@@ -6,7 +6,7 @@
 
 .about-us-info {
     display: grid;
-    grid-template-columns: 49% 2% 49%;
+    grid-template-columns: 44% 1% 44%;
     grid-column-gap: var(--space-16x);
     grid-row-gap: var(--space-8x);
 }
@@ -36,9 +36,9 @@
     margin-top: var(--space-8x);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .block-title {
-
+        align-items: center;
     }
 
     .about-us-info {
@@ -48,12 +48,5 @@
 
     hr {
         width: 100%;
-    }
-    
-    .documents__btn {
-        width: 100%;
-        color: var(--color-white);
-        background-color: var(--color-red);
-        border-color: transparent;
     }
 }

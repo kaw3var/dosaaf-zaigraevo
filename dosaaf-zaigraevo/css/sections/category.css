@@ -1,7 +1,7 @@
 .category {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
     justify-content: space-between;
 }
 
@@ -25,21 +25,7 @@ span.currency {
     vertical-align: super;
 }
 
-.category__btn button{
-    color: var(--color-white);
-}
-
-.contact__btn {
-    background-color: var(--color-red);
-    border-color: transparent;
-}
-
-.study-plan__btn {
-    background-color: transparent;
-    border-color: var(--color-white);
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .category {
         display: grid;
         grid-template-columns: 1fr;

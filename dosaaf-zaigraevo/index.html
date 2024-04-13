@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/ui.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sections/normalize.css">
     <link rel="stylesheet" href="css/sections/header.css">
     <link rel="stylesheet" href="css/sections/main-banner.css">
     <link rel="stylesheet" href="css/sections/teachers.css">
@@ -18,85 +18,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <!-- <header class="main-header">
-        <div class="main-header__pannel">
-            <nav class="main-header__nav">
-                <div class="main-header__info">
-                    <div class="main-header__logo">
-                        <img src="img/dosaaf.jpg" alt="" class="dosaaf" loading="lazy">
+    <header class="header">
+        <div class="container">
+            <nav class="nav__header">
+                <div class="nav-info">
+                    <div class="nav__logo">
+                        <img src="img/dosaaf.jpg" alt="dosaaf" class="dosaaf__logo" loading="lazy">
                     </div>
-                    <div class="main-header__card">
-                        <div class="main-header__card__item">
-                            <p class="main-header__card__name">Режим работы:  </p>
-                            <p class="main-header__card__detail">08:00 - 17:00</p>
-                        </div>
-                        <div class="main-header__card__item">
-                            <p class="main-header__card__name">Обед: </p>
-                            <p class="main-header__card__detail">12:00 - 13:00</p>
-                        </div>
+                    <div class="contact-info__item">
+                        <p><span class="bold">Режим работы:</span> 08:00 - 17:00</p>
+                        <p><span class="bold">Обед:</span> 12:00 - 13:00</p>
                     </div>
-                </div>  
-                <div class="main-header__hidden">
-                    <img src="img/dosaaf.jpg" alt="" loading="lazy">
+                </div>
+                <div class="nav__menu">
+                    <button class="nav__btn" id="changeImgBtn">
+                        <img id="imgToChange" src="img/line-hidden.jpeg" alt="" class="lines" loading="lazy">
+                    </button>
                 </div>
             </nav>
+            <div class="nav__menu--hidden">
+                <div class="nav__hidden">
+                    <nav class="nav-footer--hidden">
+                        <a href="#about-us-section" class="nav-footer__link">О нас</a>
+                        <a href="#category-section" class="nav-footer__link">Услуги</a>
+                        <a href="#category-section" class="nav-footer__link">Цены</a>
+                        <a href="#category-section" class="nav-footer__link">Программы</a>
+                        <a href="#teachers-section" class="nav-footer__link">Коллектив</a>
+                        <a href="#document-section" class="nav-footer__link">Документы</a>
+                        <a href="#contact-section" class="nav-footer__link">График</a>
+                    </nav>
+                    <article class="nav__contact-info">
+                        <div class="contact-info__item--img">
+                            <img src="img/phone.jpg" alt="phone">
+                            <p>+8(30136) 4-15-78</p>
+                            <img src="img/phone.jpg" alt="phone">
+                            <p>+8(30136) 4-15-78</p>
+                            <img src="img/email.jpg" alt="email">
+                            <p>zaigraevo.dosaaf@yandex.ru</p>
+                        </div>
+                        <div class="contact-info__item">
+                            <p><span class="bold">Режим работы:</span> 08:00 - 17:00</p>
+                            <p><span class="bold">Обед:</span> 12:00 - 13:00</p>
+                        </div>
+                        <div class="contact-info__item">
+                            <p><span class="bold">Адрес:</span> Заиграевский район, пгт.<br>Заиграево, ул. Карьерная, дом 45</p>
+                            <p><span class="bold">Индекс:</span> 671310</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
     </header>
-    <section class="main-banner">
-        <div class="main-banner__block">
-            <h1 class="main-heading">ДОСААФ ЗАИГРАЕВО</h1>
-            <div class="main-banner__content">
-                <div class="main-banner__info">
-                    <h2 class="main-banner__info__title">ПОДГОТОВКА ВОДИТЕЛЕЙ ВСЕХ КАТЕГОРИЙ</h2>
-                    <p class="main-banner__info__subtitle">ПОУ Заигравеский РСТК РО ДОСААФ России РБ.</p>
-                    <button class="contact-button">Связаться</button>
-                </div>
-                <div class="main-banner__car-logo">
-                    <img src="" alt="" class="car" loading="lazy">
-                </div>
-            </div>
-            <div class="main-banner__bottom">
-                <p class="main-banner__down">Вниз</p>
-                <div class="main-banner__arrow-down">
-                    <img src="" alt="" class="arrow-down" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="category">
-        <div class="category__block">
-            <div class="category__main">
-                <h2 class="heading">КАТЕГОРИЯ А</h2>
-                <ul class="category__study">
-                    <li><p class="category__study-info">
-                        Срок освоения - 1.5 - 2 месяца
-                    </p></li>
-                    <li><p class="category__study-info">
-                        Форма обучения - очная (вечерняя, двеная)
-                    </p></li>
-                    <li><p class="category__study-info">
-                        Уровень образования - не ниже основного общего образования
-                    </p></li>
-                    <li><p class="category__study-info">
-                        Код и наименование профессии - 11442, водитель автомобиля
-                    </p></li>
-                </ul>
-            </div>
-            <div class="category__price">
-                <div class="category__price-info">
-                    <p class="price-info__detail">8000</p>
-                </div>
-                <div class="category__button-block">
-                    <button class="contact-button">Связаться</button>
-                    <button class="study-plan-button">Учебный план</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <div class="section light-background">
-        <div class="container">
+        <div class="container" id="main-section">
+            <p class="main-title">Досааф заиграево</p>
+            <div class="main">
+                <div class="main__text">
+                    <p class="container-subtitle">Подготовка  водителей всех категорий</p>
+                    <p class="main__text">ПОУ Заигравеский РСТК РО ДОСААФ России РБ.</p>
+                    <button class="btn--red" type="submit">Связаться</button>
+                </div>
+                <div class="main__logo">
+                    <img src="img/car.jpeg" alt="car" class="car-logo" loading="lazy">
+                </div>
+            </div>
+            <div class="main__bottom">
+                <p>Вниз</p>
+                <img src="img/arrow.jpeg" alt="arrow-down" class="scroll" loading="lazy">
+            </div>
+        </div>
+    </div>
+    <div class="section dark-background">
+        <div class="container" id="category-section">
+            <div class="container-title">Категория А</div>
+            <article class="category">
+                <div class="study__info">
+                    <div class="card__info title">Учебные предметы:</div>
+                    <ul class="card__info list">
+                        <li class="item"><span class="bold">Срок освоения</span> – 1.5 - 2 месяца</li>
+                        <li class="item"><span class="bold">Форма обучения</span> – очная (вечерняя, дневная)</li>
+                        <li class="item"><span class="bold">Уровень образования</span> – не ниже основного общего образования</li>
+                        <li class="item"><span class="bold">Код и наименование профессии</span> – 11442, водитель автомобиля</li>
+                    </ul>
+                </div>
+                <div class="category__mouse-logo">
+                    <img src="img/mouse.svg" alt="mouse" class="mouse-logo" loading="lazy">
+                </div>
+                <div class="category__price">
+                    <p>8000<span class="currency">₽</span></p>
+                    <div class="category__btn">
+                        <button class="btn--red" type="submit">Связаться</button>
+                        <button class="btn--black" type="submit">Учебный план</button>
+                    </div>
+                </div>
+                <p class="category__page-info">1/5</p>
+            </article>
+        </div>
+    </div>
+    <div class="section light-background">
+        <div class="container" id="teachers-section">
             <p class="container-title">Преподаватели</p>
             <article class="teachers">
                 <div class="card">
@@ -129,13 +152,15 @@
                 </div>
             </article>
             <div class="teachers__btn">
-                <button class="download__btn">Скачать сведения</button>
-                <div class="counter-list">1/4</div>
+                <button class="btn--default" type="submit">Скачать сведения</button>
+                <div class="counter-list">
+                    <p><1/4></p>
+                </div>
             </div>
         </div>
     </div>
     <div class="section dark-background">
-        <div class="container">
+        <div class="container" id="about-us-section">
             <div class="block-title">
                 <p class="container-title">О нас</p>
                 <p class="container-subtitle">Биография</p>
@@ -144,7 +169,7 @@
                 <div class="about-us-info__photo">
                     <img src="img/about-us__photo.jpeg" class="about-us-photo" loading="lazy">
                 </div>
-                <hr style="border-color: var(--color-white-additional);">
+                <hr>
                 <div class="about-us-info__info">
                     <p class="about-us-info__date">11.05.1986</p>
                     <p class="about-us-info__text">
@@ -201,26 +226,29 @@
                 </div>
             </article>
             <div class="about-us__btn">
-                <button class="documents__btn" type="submit">Документы</button>
+                <button class="btn--red" type="submit" id="document-section">Документы</button>
             </div>
         </div>
     </div>
     <div class="section light-background">
-        <div class="container">
+        <div class="container" id="contact-section">
             <p class="container-title">Контакты</p>
             <article class="contact-info">
-                <div class="contact-info__item">
+                <div class="contact-info__item--img">
+                    <img src="img/phone.jpg" alt="phone">
                     <p>+8(30136) 4-15-78</p>
+                    <img src="img/phone.jpg" alt="phone">
                     <p>+8(30136) 4-15-78</p>
+                    <img src="img/email.jpg" alt="email">
                     <p>zaigraevo.dosaaf@yandex.ru</p>
                 </div>
                 <div class="contact-info__item">
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
+                    <p><span class="bold">Режим работы:</span> 08:00 - 17:00</p>
+                    <p><span class="bold">Обед:</span> 12:00 - 13:00</p>
                 </div>
                 <div class="contact-info__item">
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
+                    <p><span class="bold">Режим работы:</span> Заиграевский район, пгт. Заиграево, ул. Карьерная, дом 45</p>
+                    <p><span class="bold">Индекс:</span> 671310</p>
                 </div>
             </article>
             <article class="contact-form">
@@ -238,7 +266,7 @@
                     <label class="contact-form__item">
                         <input class="contact-form__input" placeholder="Сообщение" />
                     </label>
-                    <button class="contact-form__btn" type="submit">Отправить</button>
+                    <button class="btn--red" type="submit">Отправить</button>
                 </form>
                 <div class="contact-form__map"></div>
             </article>
@@ -247,29 +275,33 @@
     <div class="section dark-background">
         <div class="container">
             <nav class="nav-footer">
-                <a href="" class="nav-footer__link">О нас</a>
-                <a href="" class="nav-footer__link">Услуги</a>
-                <a href="" class="nav-footer__link">Цены</a>
-                <a href="" class="nav-footer__link">Программы</a>
-                <a href="" class="nav-footer__link">Коллектив</a>
-                <a href="" class="nav-footer__link">Документы</a>
-                <a href="" class="nav-footer__link">График</a>
+                <a href="#about-us-section" class="nav-footer__link">О нас</a>
+                <a href="#category-section" class="nav-footer__link">Услуги</a>
+                <a href="#category-section" class="nav-footer__link">Цены</a>
+                <a href="#category-section" class="nav-footer__link">Программы</a>
+                <a href="#teachers-section" class="nav-footer__link">Коллектив</a>
+                <a href="#document-section" class="nav-footer__link">Документы</a>
+                <a href="#contact-section" class="nav-footer__link">График</a>
             </nav>
             <article class="contact-info">
-                <div class="contact-info__item">
+                <div class="contact-info__item--img">
+                    <img src="img/phone.jpg" alt="phone" class="white-img">
                     <p>+8(30136) 4-15-78</p>
+                    <img src="img/phone.jpg" alt="phone" class="white-img">
                     <p>+8(30136) 4-15-78</p>
+                    <img src="img/email.jpg" alt="email" class="white-img">
                     <p>zaigraevo.dosaaf@yandex.ru</p>
                 </div>
                 <div class="contact-info__item">
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
+                    <p><span class="bold">Режим работы:</span> 08:00 - 17:00</p>
+                    <p><span class="bold">Обед:</span> 12:00 - 13:00</p>
                 </div>
                 <div class="contact-info__item">
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
-                    <p><strong>Режим работы:</strong> 08:00 - 17:00</p>
+                    <p><span class="bold">Адрес:</span> Заиграевский район, пгт. Заиграево, ул. Карьерная, дом 45</p>
+                    <p><span class="bold">Индекс:</span> 671310</p>
                 </div>
             </article>
+            <hr>
             <div class="advertisement-banner">
                 <p>© досаафзаиграево.рф 2024</p>
                 <p>Сайт создан командой CommaSoftware</p>

@@ -25,6 +25,7 @@
     transform: translate(0, -50%);
     z-index: 1;
     background-color: var(--light-background);
+    overflow: hidden;
 }
 
 .teachers > .card > .card__name {
@@ -44,23 +45,23 @@
     margin-top: var(--space-4x);
 }
 
-.download__btn {
-    background-color: var(--color-white);
-    border-color: var(--color-black);
-    color: var(--color-black);
-}
-
-@media screen and (max-width: 600px) {
-    .teachers {
+@media screen and (max-width: 768px) {
+        .teachers {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .teachers > .card {
-        padding: 40px 12px;
+        padding: 75px 12px;
     }
 
     .teachers .card:nth-child(2) {
         display: none;
     }    
+
+    .teachers__btn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--space-2x);
+    }
 }

@@ -2,8 +2,14 @@
     font-family: var(--font-family-global);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* Стиль для списка */
@@ -83,12 +89,40 @@ li {
 }
 
 button {
-    justify-self: end;
     padding: var(--space-4x) var(--space-10x);
     border-radius: 5px;
     font-weight: var(--font-weight-additional);
     border: 1px solid;
     font-size: var(--font-size-main);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn--red {
+    background-color: var(--color-red);
+    border-color: transparent;
+    color: var(--color-white);
+}
+
+.btn--black {
+    background-color: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.btn--default:hover {
+    background-color: var(--color-black);
+    color: var(--color-white)
+}
+
+.btn--red:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.btn--black:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 input {
@@ -104,7 +138,11 @@ span.bold {
     font-weight: var(--font-weight-additional);
 }
 
-@media screen and (max-width: 600px) {
+.white-img {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 768px) {
     .container {
         padding: var(--space-12x) var(--space-3x);
     }
@@ -115,5 +153,9 @@ span.bold {
 
     .container-subtitle {
         font-size: 20px;
+    }
+
+    button {
+        width: 100%;
     }
 }

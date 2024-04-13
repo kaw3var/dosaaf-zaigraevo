@@ -15,7 +15,11 @@ footer .container {
     padding: 120px 0 0 0;
 }
 
-@media screen and (max-width: 600px) {
+.nav-footer__link:hover {
+    color: var(--color-red);
+}
+
+@media screen and (max-width: 768px) {
     footer .container {
         padding: var(--space-12x) var(--space-3x) 0 var(--space-3x);
     }
